@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: rgb(98, 142, 117);
+    background: linear-gradient(90deg, rgba(98, 142, 117, 1) 0%, rgba(26, 72, 85, 1) 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    padding: 4.1rem 16.5rem 9.1rem 16.5rem;
+}
+
+nav {
+    padding-top: 5.4rem;
+    padding-bottom: 7.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: center;
+}
+
+nav .socialMedias {
+    display: flex;
+    gap: 3.7rem;
+}
+
+nav img {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: 16.5rem;
+}
+
+.container.wrapper {
+    justify-content: center;
+    padding-top: 0;
+}
+
+.content h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    padding-bottom: 1.4rem;
+    text-transform: uppercase;
+}
+
+.content h1 {
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 109%;
+    max-width: 440px;
+    text-transform: uppercase;
+}
+
+.content p {
+    padding: 2.5rem 0 4.6rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+    max-width: 440px;
+}
+
+.content .btn-group {
+    display: flex;
+}
+
+.content .btn-group .btn-watch svg:hover path:nth-child(1){
+    transition: 500ms;
+    fill: hsla(146, 22%, 36%, 0.733);
+    stroke: #639879;
+    stroke-width: 3;
+}
+
+.content .btn-group .btn-trailer svg:hover path:nth-child(1){
+    transition: 500ms;
+    fill: hsla(146, 22%, 36%, 0.733);
+    stroke: #639879;
+    stroke-width: 3;
+}
+
+.container aside img {
+    width: 50rem;
+}
+
+
