@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -8,14 +9,27 @@
 }
 
 body {
-    background: rgb(98, 142, 117);
-    background: linear-gradient(90deg, rgba(98, 142, 117, 1) 0%, rgba(26, 72, 85, 1) 100%);
+    background: linear-gradient(90deg, rgb(69, 117, 90) 0%, rgba(26, 72, 85, 1) 100%);
     color: white;
     font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
-    padding: 4.1rem 16.5rem 9.1rem 16.5rem;
+    padding: 4.1rem 16.5rem 4.1rem 16.5rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 nav {
@@ -38,12 +52,19 @@ nav img {
 
 .container {
     display: flex;
-    gap: 16.5rem;
+    gap: 7.5rem;
 }
 
 .container.wrapper {
+    padding: 0rem 16.5rem 4.1rem 16.5rem;
     justify-content: center;
     padding-top: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .content h4 {
@@ -89,8 +110,100 @@ nav img {
     stroke-width: 3;
 }
 
-.container aside img {
+.container img {
     width: 50rem;
 }
 
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
 
+.modal img{
+    position: relative;
+    width: 50px;
+    bottom: 20rem;
+    cursor: pointer;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width: 1200px) {
+    .wrapper{
+        padding: 4.1rem 10rem 4.1rem 10rem;
+    }
+    .container{
+        gap: 0rem;
+    }
+}
+
+@media(max-width: 1100px) {
+    .wrapper{
+        padding: 4.1rem 5rem 4.1rem 5rem;
+    }
+    .container{
+        gap: 0rem;
+    }
+}
+
+@media(max-width: 1000px) {
+    .wrapper{
+        padding: 1.3rem 3rem 0rem 3rem;
+    }
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container.wrapper{
+        padding-bottom: 10rem;
+    }
+    .container img {
+        width: 45rem;
+        display: block;
+        position: relative;
+        top: -30px;
+        object-position: 0 3rem;
+        margin-inline: auto;
+    }
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+    .modal img{
+        bottom: 13rem;
+    }
+}
+
+@media(max-width:600px){
+    nav .socialMedias{
+        gap: 1.2rem
+    }
+    .container.wrapper{
+        padding: 0rem 3rem 6rem 3rem;
+    }
+    .container .content h1{
+        font-size: 3.9rem;
+    }
+    .container .btn-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    iframe{
+        width: 300px;
+        height: 190px;
+    }
+    .modal img{
+        bottom: 7rem;
+    }
+}
