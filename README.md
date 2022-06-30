@@ -13,9 +13,10 @@
 <h1 align="center">
   Studio Ghibli
 </h1>
+<p>Neste desafio fiz a utilização de flexbox, media queries para fazer a resposividade e também fiz um modal utilizando css e js para mostrar um trailer.</p>
 
 <p align="center">
-  <a href="#desafio-03---onepage-">Demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#desafio-05---studioghibli-">Demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
@@ -34,11 +35,11 @@
 
 ### **Desafio 05 - StudioGhibli** <a name="id01"></a>
 
-### [🔛 Rodar pagina](https://mateuss18.github.io/Desafio03_Codelandia-HalloweenPedia/)
+### [🔛 Rodar pagina](https://mateuss18.github.io/Desafio05_StudioGhibli/)
 
-<img src="images/desktop.gif" alt="">
+<img src="assets/images/desktop.gif" alt="">
 
-<img src="images/mobile.gif" alt="">
+<img src="assets/images/mobile.gif" alt="">
 
 Link do desafio no Figma: [Clique aqui](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=5854%3A2)
 
